@@ -1,6 +1,6 @@
 body {
-  font-family: 'Orbitron', sans-serif;
-  background-color: #818181;
+  font-family: 'Raleway', sans-serif;
+  background-image: url(http://i.imgur.com/SzOPmOv.gif);
 }
 
 #calculator {
@@ -9,7 +9,7 @@ body {
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dfd8d0;
+  background-color: #ffe6f3;
   border: 2px solid #908b85;
   border-radius: 20px;
   box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
@@ -18,6 +18,7 @@ body {
 #title {
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 #entrybox {
@@ -88,13 +89,14 @@ button:active {
 }
 
 #footer {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto Slab', serif;
   position: relative;
   font-size: 16px;
   font-weight: normal;
   margin-top: 40px;
   width: 100%;
   height: 40px;
+  color: white;
 }
 
 button,
