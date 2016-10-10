@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCtype html>
 <html>
   <head>
     <title>Calculator</title>
@@ -6,39 +6,46 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
     <link href="main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="java.js"></script>
   </head>
 
   <body>
-    <script src="java.js"></script>
-    <div id="calculator">
-
+    <div class="container" id="calculator">
       <form>
-        <div id="title">Do math n stuff</div>
-        <input type="text" id="display" >
-        <br>
-        <input type="button" id="keys" value="AC" onclick="addtoscreen('ac')">
-        <input type="button" id="keys" value="C" onclick="addtoscreen('c')">
-        <input type="button" id="keys" value="<--" onclick="backspace()">
-        <input type="button" id="keys" value="+" onclick="addtoscreen('+')">
-        <br>
-        <input type="button" id="keys" value="9" onclick="addtoscreen('9')">
-        <input type="button" id="keys" value="8" onclick="addtoscreen('8')">
-        <input type="button" id="keys" value="7" onclick="addtoscreen('7')">
-        <input type="button" id="keys" value="-" onclick="addtoscreen('-')">
-        <br>
-        <input type="button" id="keys" value="6" onclick="addtoscreen('6')">
-        <input type="button" id="keys" value="5" onclick="addtoscreen('5')">
-        <input type="button" id="keys" value="4" onclick="addtoscreen('4')">
-        <input type="button" id="keys" value="*" onclick="addtoscreen('*')">
-        <br>
-        <input type="button" id="keys" value="3" onclick="addtoscreen('3')">
-        <input type="button" id="keys" value="2" onclick="addtoscreen('2')">
-        <input type="button" id="keys" value="1" onclick="addtoscreen('1')">
-        <input type="button" id="keys" value="/" onclick="addtoscreen('/')">
-        <br>
-        <input type="button" id="keys" value="0" onclick="addtoscreen('0')">
-        <input type="button" id="keys" value="." onclick="addtoscreen('.')">
-        <input type="button" id="equal" value="=" onclick="answer()">
+        <div class="row" id="result">
+          <p>0</p>
+        </div>
+        <div class="row" id="equation">
+          <i>0</i>
+        </div>
+        <div class="row">
+          <button type="button" id="keys" name="button"   value="1">1</button>
+          <button type="button" id="keys" name="button"   value="2">2</button>
+          <button type="button" id="keys" name="button" value="3">3</button>
+          <button type="button" id="keys" name="button"  value="+">+</button>
+        </div>
+        <div class="row">
+          <button type="button" id="keys" name="button"  value="4">4</button>
+          <button type="button" id="keys" name="button"  value="5">5</button>
+          <button type="button" id="keys" name="button"   value="6">6</button>
+          <button type="button" id="keys" name="button" value="-">-</button>
+        </div>
+        <div class="row">
+          <button type="button" id="keys" name="button" value="7">7</button>
+          <button type="button" id="keys" name="button" value="8">8</button>
+          <button type="button" id="keys" name="button"  value="9">9</button>
+          <button type="button" id="keys" name="button" value="*">*</button>
+        </div>
+        <div class="row">
+          <button type="button" id="AC" name="button" value="AC">AC</button>
+          <button type="button" id="keys" name="button"  value="0">0</button>
+          <button type="button" id="keys" name="button"  value=".">.</button>
+          <button type="button" id="keys" name="button"   value="/">/</button>
+        </div>
+        <div class="row">
+          <button type="button" id="CE" name="button" value="CE">CE</button>
+          <button type="button" id="equals" name="button"  value="=">=</button>
+        </div>
       </form>
 
     </div>
